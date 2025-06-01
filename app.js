@@ -75,7 +75,7 @@ function renterUI(){
 
     for(var key in optionsList){
         console.log("loop", optionsList[key])
-        options.innerHTML += `<li>${optionsList[key]}</li>`
+        options.innerHTML += `<li onclick="checkAnswer(this)">${optionsList[key]}</li>`
     }
 }
 function nextQues(){
@@ -84,4 +84,25 @@ function nextQues(){
     renterUI()
     count.innerHTML = `<p>${indexNumber + 1}/${quizQuestions.length}</p>`
 
+}
+function checkAnswer(ele){
+
+    const userAnswer = ele.innerHTML
+    const actualAnswer = quizQuestions[indexNumber].answer 
+
+    if(userAnswer === actualAnswer){
+        ele.style.background = "Green"
+    }else{
+       ele.style.background = "Red" 
+    }
+
+    const allList = document.getElementById("options")
+    console.log("demo",allList.childNodes)
+    allList.style.pointerEvents = "none"
+
+
+
+
+
+    
 }

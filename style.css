@@ -29,8 +29,10 @@ li{
     margin-top: 10px;
     padding: 8px;
     cursor: pointer;
+    /* pointer-events: none; */
 }
 li:hover{
     transform: scale(1.05);
     transition: all 0.3s ease;
+    
 }
