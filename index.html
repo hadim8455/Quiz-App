@@ -6,8 +6,72 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>hellow</h1>
+<body onload="renterUI()">
+
+    <div class="quizContainer">
+
+        <!-- header -->
+        <div class="quizHeader">
+            
+            <div>
+                <p>Name: Muhammad Hadi</p>
+            </div>
+
+            <div>
+                <p>Email: hadim8455@gmail.com</p>
+            </div>
+
+            <div>
+                <p>Time: 4:00PM</p>
+            </div>
+
+        </div>
+
+        <!-- Body -->
+
+        <div class="quizBody">
+
+            <div>
+
+                <h1 id="question">Q1: HTML stands for?</h1>
+                <ul id="options">
+                    <!-- <li>Hyper Text Markup Language</li>
+                    <li>Hyper Text Programming Language</li>
+                    <li>Hyper Text Style Language</li>
+                    <li>Hyper Text Scripting Language</li> -->
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div class="quizFooter">
+            
+            <div>
+                <p id="count">1/5</p>
+            </div>
+
+            <div>
+                <button onclick="nextQues()">Next</button>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
 </body>
 <script src="app.js"></script>
 </html>
